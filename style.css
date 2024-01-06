@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+#bigContainer{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-flow:column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#heading{
+    width:580px;
+    height:100px;
+    display:flex;
+    flex-flow:column;
+    justify-content: space-around;
+    align-items: center;
+}
+#discrip{
+    text-align: center;
+}
+
+#mainbody{
+    width:1100px;
+    height:640px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    padding:1rem;
+    gap:20px;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8{
+    width:255px;
+    height:300px;
+    /* background-color: brown; */
+    border:1px solid black;
+    border-radius:10px;
+    display:flex;
+    flex-flow: column;
+    /* justify-content: space-between; */
+    align-items:center;
+    gap:10px;
+}
+
+#box1 #ele1 a img,#box2 #ele1 a img,#box3 #ele1 a img,#box4 #ele1 a img,
+#box5 #ele1 a img,#box6 #ele1 a img,#box7 #ele1 a img,#box8 #ele1 a img{
+    width:255px;
+    height:170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border:1px solid black;
+    transition: all 0.01s ease-in 0s;
+}
+#box1 #ele1 a img:hover,#box2 #ele1 a img:hover,#box3 #ele1 a img:hover,#box4 #ele1 a img:hover,
+#box5 #ele1 a img:hover,#box6 #ele1 a img:hover,#box7 #ele1 a img:hover,#box8 #ele1 a img:hover{
+    transform: scale(1.1);
+}
+
+#box1 #ele1 a img,#box2 #ele1 a img,#box3 #ele1 a img,#box4 #ele1 a img,
+#box5 #ele1 a img,#box6 #ele1 a img,#box7 #ele1 a img,#box8 #ele1 a img{
+    width:255px;
+    height:160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border:1px solid black;
+}
+
+#box1 #ele2,#box2 #ele2,#box3 #ele2,#box4 #ele2,
+#box5 #ele2,#box6 #ele2,#box7 #ele2,#box8 #ele2{
+    width:240px;
+    height:70px;
+    padding-left:10px ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* border:1px solid black; */
+}
+
+#box1 #ele2 p,#box2 #ele2 p,#box3 #ele2 p,#box4 #ele2 p,
+#box5 #ele2 p,#box6 #ele2 p,#box7 #ele2 p,#box8 #ele2 p{
+    padding-top:5px;
+    font-size: 0.9rem;
+}
+
+#box1 #ele3,#box2 #ele3,#box3 #ele3,#box4 #ele3,
+#box5 #ele3,#box6 #ele3,#box7 #ele3,#box8 #ele3{
+    width:240px;
+    height:70px;
+    display:flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border:1px solid black; */
+}
+
+#box1 #ele3 #customerinfo,#box2 #ele3 #customerinfo,#box3 #ele3 #customerinfo,#box4 #ele3 #customerinfo,
+#box5 #ele3 #customerinfo,#box6 #ele3 #customerinfo,#box7 #ele3 #customerinfo,#box8 #ele3 #customerinfo{
+    width:150px;
+    height:40px;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    /* border:1px solid black; */
+}
+
+#box1 #ele3 #customerinfo #leftbox,#box2 #ele3 #customerinfo #leftbox,#box3 #ele3 #customerinfo #leftbox,#box4 #ele3 #customerinfo #leftbox,
+#box5 #ele3 #customerinfo #leftbox,#box6 #ele3 #customerinfo #leftbox,#box7 #ele3 #customerinfo #leftbox,#box8 #ele3 #customerinfo #leftbox{
+    width:40px;
+    height:38px;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    /* border:1px solid black; */
+}
+
+#box1 #ele3 #customerinfo #rightbox,#box2 #ele3 #customerinfo #rightbox,#box3 #ele3 #customerinfo #rightbox,#box4 #ele3 #customerinfo #rightbox,
+#box5 #ele3 #customerinfo #rightbox,#box6 #ele3 #customerinfo #rightbox,#box7 #ele3 #customerinfo #rightbox,#box8 #ele3 #customerinfo #rightbox{
+    width:100px;
+    height:40px;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    /* border:1px solid black; */
+}
+
+#box1 #ele3 #customerinfo #rightbox a,#box2 #ele3 #customerinfo #rightbox a,#box3 #ele3 #customerinfo #rightbox a,#box4 #ele3 #customerinfo #rightbox a,
+#box5 #ele3 #customerinfo #rightbox a,#box6 #ele3 #customerinfo #rightbox a,#box7 #ele3 #customerinfo #rightbox a,#box8 #ele3 #customerinfo #rightbox a{
+    text-decoration:none; 
+}
+
+#box1 #ele3 #customerinfo #rightbox p,#box2 #ele3 #customerinfo #rightbox p,#box3 #ele3 #customerinfo #rightbox p,#box4 #ele3 #customerinfo #rightbox p
+#box5 #ele3 #customerinfo #rightbox p,#box6 #ele3 #customerinfo #rightbox p,#box7 #ele3 #customerinfo #rightbox p,#box8 #ele3 #customerinfo #rightbox p{
+    font-size: 0.8rem;  
+}
+
+#box1 #ele3 #topic1,#box2 #ele3 #topic1,#box3 #ele3 #topic1,#box4 #ele3 #topic1,
+#box5 #ele3 #topic1,#box6 #ele3 #topic1,#box7 #ele3 #topic1,#box8 #ele3 #topic1{
+    width:80px;
+    height:20px;
+    display:flex;
+    flex-flow:row;
+    justify-content: center;;
+    align-items: center;
+    font-size:0.8rem ;
+    border:1px solid black;
+    border-radius: 10px;;
+}
+
+/* Add this media query at the end of your CSS */
+
+@media (max-width: 1100px) {
+    #bigContainer {
+        width: 100%;
+        height: auto;
+    }
+    
+    #heading {
+        width: 100%;
+        height: auto;  
+    }
+
+    #mainbody {
+        width: 100%; 
+        height: auto;
+        grid-template-rows: auto; 
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); 
+        display: grid;
+        padding: 1rem;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5,
+    #box6,
+    #box7,
+    #box8 {
+        width: auto; 
+        margin-bottom: 20px; 
+    }
+
+    #box1 #ele1 a img,
+    #box2 #ele1 a img,
+    #box3 #ele1 a img,
+    #box4 #ele1 a img,
+    #box5 #ele1 a img,
+    #box6 #ele1 a img,
+    #box7 #ele1 a img,
+    #box8 #ele1 a img {
+        height: 160px; 
+    }
+}
